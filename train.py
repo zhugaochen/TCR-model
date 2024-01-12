@@ -12,11 +12,6 @@ from model import TCRDataset
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 data, labels = load_data('../train')
-# data = np.array(data)
-# data = torch.tensor(data, dtype=torch.float32)
-# labels = np.array(labels)
-# labels = labels.reshape(-1, 1)
-# labels = torch.tensor(labels, dtype=torch.float32)
 data_tensor = np.array(data)
 data_tensor = torch.tensor(data_tensor, dtype=torch.float32)
 print(data_tensor.shape)
