@@ -6,7 +6,7 @@ from model import Tudui
 # 定义训练的设备
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-data, labels = load_data('../t2')
+data, labels = load_data('../test')
 # labels = torch.tensor(labels, dtype=torch.float32)
 data_tensor = np.array(data)
 data_tensor = torch.tensor(data_tensor, dtype=torch.float32)
