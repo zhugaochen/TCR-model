@@ -11,7 +11,7 @@ from model import TCRDataset
 # 定义训练的设备
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-data, labels = load_data('../train1')
+data, labels = load_data('../train')
 # data = np.array(data)
 # data = torch.tensor(data, dtype=torch.float32)
 # labels = np.array(labels)
